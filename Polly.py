@@ -7,7 +7,7 @@ import time
 
 
 # Time delay variables
-delay1 = 0.8
+delay1 = 1
 delay2 = 0.55
 delay3 = 0.08
 
@@ -15,7 +15,45 @@ delay3 = 0.08
 # Dialogue choice functions
 def whoAreYou():
   print()
-  print("I am an AI designed by CompanyInc.")
+  print("I am an AI designed by Flock Technologies with the purpose of assisting in menial tasks, and having human like interactions with my users.")
+  moreInfo()
+
+def moreInfo():
+ moreInfo = input("""
+ What else would you like to know?
+
+ (1) Who created you?
+ (2) What is Flock Technologies?
+ (3) Close Polly
+  : """)
+
+ if moreInfo == '1':
+   creator()
+
+ if moreInfo == '2':
+   infoFlock()
+
+ if moreInfo == '3':
+   print("closing")
+
+
+
+def creator():
+  print()
+  print("I was created by a man named Orion Bouwman, on June 23rd 2037.")
+  time.sleep(delay1)
+  moreInfo()
+
+
+def infoFlock():
+  print()
+  print("FLock technologies was a company founded by Hugo Aerts in 2020.")
+  time.sleep(delay2)
+  print("The headquarters are located in Rotterdam, with the current CEO being Otis Booles.")
+  time.sleep(delay2)
+  print("Flock Technologies goal is to drive artificial intelligence into the future.")
+  time.sleep(delay1)
+  moreInfo()
 
 
 
@@ -57,7 +95,7 @@ print("""
 
 """)
 
-time.sleep(delay1)
+time.sleep(delay2)
 
 # Initiating Polly
 initiatePolly = (input(""" 
@@ -67,7 +105,7 @@ Would you like to initiate Polly?
 
 (1) Y
 (2) N
- : """))
+  : """))
 
 if initiatePolly == '1':
   intro()
