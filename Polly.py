@@ -41,18 +41,23 @@ def moreInfo():
 def creator():
   print()
   print("I was created by a man named Orion Bouwman, on June 23rd 2037.")
-  time.sleep(delay1)
+
+  print()
+  goBack = input("(1) back")
   moreInfo()
 
 
 def infoFlock():
   print()
-  print("FLock technologies was a company founded by Hugo Aerts in 2020.")
+  print("FLock technologies was a company founded by **** ***** in 2020.")
   time.sleep(delay2)
   print("The headquarters are located in Rotterdam, with the current CEO being Otis Booles.")
   time.sleep(delay2)
   print("Flock Technologies goal is to drive artificial intelligence into the future.")
   time.sleep(delay1)
+
+  print()
+  goBack = input("(1) back")
   moreInfo()
 
 
@@ -62,18 +67,23 @@ def intro():
   playerName = input(("""What would you like me to refer to you as? 
   : """))
   time.sleep(delay2)
+
   print()
   print("Hello "+playerName+".")
   time.sleep(delay2)
+
   print()
   print("That is a wonderful name.")
   time.sleep(delay2)
+
   print()
   print("I am Polly!")
   time.sleep(delay2)
+
   print()
   whoAreYouI = input(("""(1) Who are you Polly?
   : """))
+
   if whoAreYouI == '1':
     whoAreYou()
  
