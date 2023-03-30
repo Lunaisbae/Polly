@@ -43,7 +43,9 @@ def creator():
   print("I was created by a man named Orion Bouwman, on June 23rd 2037.")
 
   print()
-  goBack = input("(1) back")
+  goBack = input("""
+  (any key) back
+  : """)
   moreInfo()
 
 
@@ -57,7 +59,9 @@ def infoFlock():
   time.sleep(delay1)
 
   print()
-  goBack = input("(1) back")
+  goBack = input("""
+  (any key) back
+  : """)
   moreInfo()
 
 
